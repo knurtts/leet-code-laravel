@@ -25,6 +25,6 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
-Route::get('/problems/prodofallnotself', [LeetCodeQuestions::class, 'productOfArrayNotSelf'])->name('problems.prodofallnotslef');
 
 require __DIR__.'/auth.php';
+require __DIR__.'/leetcode.php';
