@@ -37,7 +37,7 @@ function submitProdOfAray(): void {
                                 Enter a list of comma-separated integers:
                             </div>
                             <input
-                                class="ml-4"
+                                class="ml-4 rounded"
                                 v-model="prodOfArrayList"
                                 placeholder="1,2,3,4"
                             />

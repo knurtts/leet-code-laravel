@@ -9,4 +9,4 @@ Route::get('/problems/prodofallnotself', [LeetCodeQuestions::class, 'productOfAr
 
 Route::get('/leetcode', function() {
     return Inertia::render('LeetCode', []);
-});
+})->name('leetcode');
