@@ -9,9 +9,7 @@ function submitProdOfAray(): void {
     const nums = prodOfArrayList.split(",");
     console.log(nums);
     axios
-        .get(route("problems.prodofallnotslef"), {
-            data: { nums },
-        })
+        .get(route("problems.prodofallnotslef", { nums }))
         .then((res: object) => {
             console.log(res);
         })
