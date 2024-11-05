@@ -7,7 +7,6 @@ let prodOfArrayList: string = "";
 
 function submitProdOfAray(): void {
     const nums = prodOfArrayList.split(",");
-    console.log(nums);
     axios
         .get(route("problems.prodofallnotslef", { nums }))
         .then((res: object) => {
