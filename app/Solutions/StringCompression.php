@@ -17,7 +17,17 @@ class StringCompression
 
     You must write an algorithm that uses only constant extra space.
     **/
-    public static function compress(array $chars) : int {
+    public static function compress(array $chars) : string {
+        $tempCount = 1;
+        $compressed = '';
+
+        for ($i=0; $i < count($chars); $i++) { 
+            if ($chars[$i] != $chars[$i+1]) {
+                $compressed+=$chars[$i];
+            } else {
+                
+            }
+        }
         return 0;
     }
 }
